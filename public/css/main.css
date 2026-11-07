@@ -29,3 +29,13 @@ footer, .navbar, .navbar-brand{
 .img_table{
     width: 90%;
 }
+
+.btn-primary{
+    background-color: lightseagreen;
+    border: 1px lightseagreen;
+}
+
+.btn-primary:hover{
+    background-color: rgb(17, 119, 114);
+    border: 1px rgb(17, 119, 114);
+}
