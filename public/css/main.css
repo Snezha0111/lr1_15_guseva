@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+.wrapper {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+.wrapper main {
+    flex: 1; 
+}
+.fio p{
+    margin-top: 1%;
+    padding: 0;
+}
+footer, .navbar, .navbar-brand{
+        background-color: lavender;
+        text-align: center;
+        color: #3d2c63;
+}
+.container{
+    padding: 1% 0;
+    text-align:center;
+}
+
+.img_table{
+    width: 90%;
+}

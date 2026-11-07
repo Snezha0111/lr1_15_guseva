@@ -6,35 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .wrapper {
-            flex: 1; 
-            display: flex;
-            flex-direction: column;
-        }
-        .wrapper main {
-            flex: 1; 
-        }
-        .fio p{
-            margin-top: 1%;
-            padding: 0;
-        }
-        footer, .navbar, .navbar-brand{
-                background-color: lavender;
-                text-align: center;
-                color: #3d2c63;
-        }
-        .container{
-            padding: 1% 0;
-            text-align:center;
-        }
-    </style>
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
 </head>
 <body>
     <div class="wrapper">
@@ -46,7 +18,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" href="hello">Главная<span class="sr-only">(current)</span></a>
+                        <a class="nav-link active" href="/">Главная<span class="sr-only">(current)</span></a>
                         <a class="nav-link" href="about">О нас</a>
                         <a class="nav-link" href="contact">Контакты</a>
                     </div>
