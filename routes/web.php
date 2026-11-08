@@ -3,11 +3,15 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ArticleController;
+
 
 Route::get('/signup', [AuthController::class, 'create']);
 Route::post('/auth/login', [AuthController::class, 'signUp']);
 Route::get('/', [MainController::class, 'index']);
 Route::get('/gallery/{full_image}', [MainController::class, 'show']);
+Route::get('/article/show', [ArticleController::class, 'index']);
+
 
 Route::get('/about', function () {
     return view('main/about');
