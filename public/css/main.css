@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    font-family: 'Nunito', sans-serif;
 }
 .wrapper {
     flex: 1; 

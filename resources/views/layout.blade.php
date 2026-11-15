@@ -22,7 +22,10 @@
                             <a class="nav-link active" href="/">Главная<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/article/show">Статьи</a>
+                            <a class="nav-link" href="/article">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/article/create">Создать статью</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about">О нас</a>
