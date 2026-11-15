@@ -1,6 +1,15 @@
 @extends('layout')
 @section('content')
-<form action="auth/login" method="post">
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+<form action="/auth/signUp" method="post">
   @csrf
     <div class="form-group">
       <label for="exampleInputPassword1">Имя</label>
