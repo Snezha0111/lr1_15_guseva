@@ -4,6 +4,10 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Auth\Access\Response;
+use App\Models\User;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,5 +25,12 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Paginator::useBootstrap();
+
+        Gate::define('article', function(User $user){
+            if ($user->role_id == 1) {
+                return Response::allow();
+            }
+            return Response::deny('Вы не являетесь модератором');
+        });
     }
 }
